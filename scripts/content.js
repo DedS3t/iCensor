@@ -4,9 +4,9 @@ JS file that controls the censoring
 
 // IMPORTANT =================================================================
 // SLURS/SWEARS HAVE BEEN REMOVED FROM THE SOURCE CODE TO MAKE SURE NO ONE GETS OFFENDED.
-const lightWords=["punani"," ass ","asshole","assface","bastard","pussy","shit","jerk off"];
-const badWords=["fuck","bitch","cunt","wanker","motherfucker","dick","cock"]; 
-const slurs=["nigger","faggot","fag","slut","whore"]; //TODO on submission remove this
+const lightWords=[];
+const badWords=[]; 
+const slurs=[];
 
 function replaceTextOnPage(from, to){
     getAllTextNodes().forEach(function(node){
