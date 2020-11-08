@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+        <link rel="stylesheet" href="style/style.css">
+    <title>Censor Words</title>
+    <script src="lib/jquery.min.js"></script>
+  </head>
+  <body class="container center">
+    
+    <h1 style="text-align: center;color:#007bff"><img src="icon.jpg" class="img" alt="" srcset="">iCensor</h1>
+
+    <div>
+        <h4 style="display: none;" id="curr"></h4>
+        <div class="hr"></div>
+        <h5>What to Censor</h5>
+        <form id="form">
+
+
+          </form>
+          <h3 class="error" id="error"></h3>
+    </div>
+  
+
+    <div class="black">
+      <div class="hr"></div>
+      <h5>Manage BlackList</h5>
+      <label class="field field_v1">
+        <input name="blacklist" id="blacklist" class="field__input" placeholder="e.g. BadWord">
+        <span class="field__label-wrap">
+          <span class="field__label">Enter word/phrase</span>
+        </span>
+      </label>
+        <button class="btn btn-primary" id="addBlackList">Add to black list</button>
+        <button style="display:none" class="btn btn-danger" id="removeBlackList">Remove from BlackList</button><br>
+        <button class="btn btn-danger" id="viewBlackList">View BlackList</button>
+    </div>
+    <script src="scripts/popup.js"></script>
+  </body>
+</html>
+
+

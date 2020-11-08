@@ -1,0 +1,32 @@
+{
+    "name":"iCensor",
+    "version": "0.1",
+    "description":"Censor swear words, slurs, etc.",
+    "permissions": [
+        "activeTab",
+        "storage"
+      ],
+      "background": {
+         "scripts":["scripts/background.js"],
+         "persistent":false
+      },
+      "browser_action": {
+          "default_title": "Censor Inappropriate content",
+          "default_popup": "popup.html",
+          "default_icon":"icon.jpg"
+      },
+      "content_scripts":[
+          {
+              "matches":["<all_urls>"],
+              "run_at":"document_idle",
+              "js":["lib/jquery.min.js","scripts/content.js"]
+          }
+      ],
+      "icons":{
+        "16":"icon.jpg",
+        "48":"icon.jpg",
+        "128":"icon.jpg"
+      },
+      "manifest_version": 2
+
+}
